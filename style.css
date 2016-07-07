@@ -590,6 +590,9 @@ span.glyphicon-ruble::before {
 .menu_box .menu_left .icon-set__icon.red {
 	color: red;
 }
+.menu_box .menu_left .icon-set__icon.yellow {
+	color: #ef8d00;
+}
 .menu_box .menu_left sup {
 	font-size: 9px;
 }
@@ -998,6 +1001,20 @@ span.glyphicon-ruble::before {
 	width: 56px;
 	text-align: center;
 	background: blue;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 700;
+	border-radius: 3px;
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 5px;
+}
+.main_content .item .img .label_hit {
+	height: 25px;
+	line-height: 25px;
+	width: 56px;
+	text-align: center;
+	background: #ef8d00;
 	color: #fff;
 	font-size: 13px;
 	font-weight: 700;
