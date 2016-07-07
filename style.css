@@ -2115,7 +2115,7 @@ span.glyphicon-ruble::before {
 	color: 	#000;
 	border-bottom: 1px dashed #fff;
 }
-.oder_items_box .sort_box .icon-font-arrow-down2:before {
+.oder_items_box .sort_box .icon-font-arrow-down2:before, .oder_items_box .sort_box .icon-font-arrow-up2:before {
 	font-size: 8px;
 	margin-right: 2px;
 	font-weight: 400;
