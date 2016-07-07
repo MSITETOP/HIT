@@ -30,12 +30,31 @@ $(document).ready(function(){
 		$(this).siblings('.popup').slideToggle();
 		return false;
 	});
-	$('.filtr_line_box .ftr_type_group .popup label').click(function(){
+	$('.filtr_line_box .ftr_type_checkbox .popup label').click(function(){
 		checkInputs($(this));
 	});
-	$('.filtr_line_box .ftr_type_group .popup label.allclear').click(function(){
+	$('.filtr_line_box .ftr_type_checkbox .popup label.allclear').click(function(){
 		clearInputs($(this));
 	});
+	$(".ftr_type_checkbox").each(function(d,elemnt) {
+		var parent = $(elemnt).find('ul');
+		var allclear = true;
+		$(parent.find("input")).each(function(i,elem) {
+			if($(elem).is(':checked')) {
+				$(elem).parents('label').addClass("active");
+				allclear = false;
+			} else {
+				$(elem).parents('label').removeClass("active");
+			}			
+		});
+		if(allclear) {
+			parent.find(".allclear").addClass("active");
+			parent.parents(".popup").siblings("a").removeClass("active");
+		} else {
+			parent.find(".allclear").removeClass("active");
+			parent.parents(".popup").siblings("a").addClass("active");
+		}
+	});	
 });
 function checkInputs(this_obj) {
 	var parent = this_obj.parents('ul');
