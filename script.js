@@ -26,8 +26,7 @@ $(document).ready(function(){
 	
 	/* Фильтры */
 	$('.filtr_line_box .ftr_type_group>a').click(function(){
-		$('.filtr_line_box .ftr_type_group .popup').slideUp();
-		$(this).siblings('.popup').slideToggle();
+		clearInputs($(this).siblings(".popup").find("label.allclear"));
 		return false;
 	});
 	$('.filtr_line_box .ftr_type_checkbox .popup label').click(function(){
@@ -36,6 +35,7 @@ $(document).ready(function(){
 	$('.filtr_line_box .ftr_type_checkbox .popup label.allclear').click(function(){
 		clearInputs($(this));
 	});
+	
 	$(".ftr_type_checkbox").each(function(d,elemnt) {
 		var parent = $(elemnt).find('ul');
 		var allclear = true;
@@ -74,7 +74,6 @@ function checkInputs(this_obj) {
 		parent.find(".allclear").removeClass("active");
 		parent.parents(".popup").siblings("a").addClass("active");
 	}
-	parent.parents('.popup').slideUp();
 }
 function clearInputs(this_obj) {
 	var parent = this_obj.parents('ul');
@@ -85,5 +84,4 @@ function clearInputs(this_obj) {
 	});
 	parent.find(".allclear").addClass("active");
 	parent.parents(".popup").siblings("a").removeClass("active");
-	parent.parents('.popup').slideUp();
 }
