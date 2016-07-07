@@ -30,8 +30,41 @@ $(document).ready(function(){
 		$(this).siblings('.popup').slideToggle();
 		return false;
 	});
-	$('.filtr_line_box .ftr_type_group .popup li>a').click(function(){
-		$('.filtr_line_box .ftr_type_group .popup').slideUp();
-		return false;
+	$('.filtr_line_box .ftr_type_group .popup label').click(function(){
+		checkInputs($(this));
+	});
+	$('.filtr_line_box .ftr_type_group .popup label.allclear').click(function(){
+		clearInputs($(this));
 	});
 });
+function checkInputs(this_obj) {
+	var parent = this_obj.parents('ul');
+	var allclear = true;
+	$(parent.find("input")).each(function(i,elem) {
+		if($(elem).is(':checked')) {
+			$(elem).parents('label').addClass("active");
+			allclear = false;
+		} else {
+			$(elem).parents('label').removeClass("active");
+		}			
+	});
+	if(allclear) {
+		parent.find(".allclear").addClass("active");
+		parent.parents(".popup").siblings("a").removeClass("active");
+	} else {
+		parent.find(".allclear").removeClass("active");
+		parent.parents(".popup").siblings("a").addClass("active");
+	}
+	parent.parents('.popup').slideUp();
+}
+function clearInputs(this_obj) {
+	var parent = this_obj.parents('ul');
+	var allclear = true;
+	$(parent.find("input")).each(function(i,elem) {
+		$(elem).parents('label').removeClass("active");
+		$(elem).removeAttr("checked");
+	});
+	parent.find(".allclear").addClass("active");
+	parent.parents(".popup").siblings("a").removeClass("active");
+	parent.parents('.popup').slideUp();
+}

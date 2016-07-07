@@ -1849,12 +1849,17 @@ span.glyphicon-ruble::before {
 	line-height: 24px;
 	margin: 0 20px;
 }
-.filtr_line_box .ftr_type_group a {
+.filtr_line_box .ftr_type_checkbox label input {
+	display: none;
+}
+.filtr_line_box .ftr_type_group label {
+	margin: 0;
+	padding: 0;
 	text-decoration: none;
 	line-height: 24px;
 	display: inline-block;
 }
-.filtr_line_box .ftr_type_group a::after {
+.filtr_line_box .ftr_type_group label::after {
 	display: inline;
 	content: "\e114";
     font-family: 'Glyphicons Halflings';
@@ -1867,12 +1872,13 @@ span.glyphicon-ruble::before {
 	color: #7f7f7f;
 	padding-left: 5px;
 }
-.filtr_line_box .ftr_type_group a.active {
+.filtr_line_box .ftr_type_group .active {
 	font-weight: 700;
 	box-shadow: 0 0 2px rgba(0,0,0,.25);
 	padding: 0 5px;
+	text-decoration: none;
 }
-.filtr_line_box .ftr_type_group a.active::after {
+.filtr_line_box .ftr_type_group .active::after {
 	display: inline;
 	content: "×";
     font-family: 'Glyphicons Halflings';
@@ -2000,10 +2006,10 @@ span.glyphicon-ruble::before {
 	border: none;
 	border-radius: 3px;
 }
-.filtr_line_box .ftr_type_group .popup a::after {
+.filtr_line_box .ftr_type_group .popup label::after {
 	display: none;
 }
-.filtr_line_box .ftr_type_group .popup a.active::after {
+.filtr_line_box .ftr_type_group .popup .active::after {
 	display: inline;
 	content: "×";
     font-family: 'Glyphicons Halflings';
