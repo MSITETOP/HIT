@@ -1056,7 +1056,7 @@ span.glyphicon-ruble::before {
     font-style: normal;
     font-weight: normal;
     line-height: 1;
-	font-size: 70%;
+	font-size: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -1656,6 +1656,27 @@ span.glyphicon-ruble::before {
 	font-size: 13px;
 	line-height: 25px;
 }
+.all_page_content .menu_left .select_item_menu>a {
+	color: #000;
+	font-size: 13px;
+	line-height: 25px;
+	font-weight: bold;
+}
+.all_page_content .menu_left .sub_menu_left {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	padding-left: 20px;
+}
+.all_page_content .menu_left .sub_menu_left .active a {
+	color: #000;
+	font-size: 13px;
+	font-weight: bold;	
+}
+.all_page_content .menu_left .counts {
+	font-size: 13px;
+	color: #888888;
+}
 .all_page_content h1 {
 	font-size: 32px;
 	color: #000;
@@ -2094,6 +2115,11 @@ span.glyphicon-ruble::before {
 	color: 	#000;
 	border-bottom: 1px dashed #fff;
 }
+.oder_items_box .sort_box .icon-font-arrow-down2:before {
+	font-size: 8px;
+	margin-right: 2px;
+	font-weight: 400;
+}
 .oder_items_box .show_tipe_icons {
 	font-size: 16px;
 	line-height: 24px;
@@ -2211,7 +2237,7 @@ span.glyphicon-ruble::before {
     font-style: normal;
     font-weight: normal;
     line-height: 1;
-	font-size: 70%;
+	font-size: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -2336,6 +2362,7 @@ span.glyphicon-ruble::before {
 	height: auto;
 	position: absolute;
 	box-shadow: 0 0 2px #4eac32;
+	width: 100%;
 }
 
 .tovar_items_box .col-xs-12 .item  {
@@ -2604,7 +2631,7 @@ span.glyphicon-ruble::before {
     font-style: normal;
     font-weight: normal;
     line-height: 1;
-	font-size: 70%;
+	font-size: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
