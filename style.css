@@ -447,7 +447,7 @@ span.glyphicon-ruble::before {
     -moz-osx-font-smoothing: grayscale;
     content: "\e236";
 }
-.categiries_top .category_btn:hover {
+.categiries_top .popup_open:hover .category_btn {
 	background: #44972c;
 	background: -moz-linear-gradient(bottom,  #4eac32 0%, #44972c 100%);
 	background: -webkit-linear-gradient(bottom,  #4eac32 0%,#44972c 100%);
@@ -572,6 +572,171 @@ span.glyphicon-ruble::before {
 	height: 460px;
 	width: 285px;
 	position: absolute;
+}
+.categiries_top .popup_menu {
+	position: absolute;
+	background: #fff;
+	border-radius: 5px;
+	z-index: 1999; 
+	width: 1180px;
+	display: none;
+	margin-top: 60px;
+	box-shadow: 0 0 6px rgba(1,2,4,.3);
+}
+.categiries_top .popup_menu .b_inner {
+	padding: 20px 0;
+	background: #fff;
+	margin: 0 10px
+}
+.categiries_top .popup_menu .b_inner::after {
+    content: '';
+    display: block;	
+	clear: both;
+}
+.categiries_top .popup_menu::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    z-index: -1;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    background: #fff;
+    box-shadow: 0 0 6px rgba(1,2,4,.3);
+    position: absolute;
+    top: -10px;
+    left: 130px;
+}
+.categiries_top .popup_menu::after {
+    content: '';
+    display: block;
+    height: 30px;
+    z-index: -1;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    width: 100%;
+}
+.categiries_top .popup_menu .menu_left {
+	background:#fff;
+	border-radius: 5px;
+	float: left;
+	width: 285px;
+}
+.popup_open {
+	position: relative;
+}
+.categiries_top .popup_open:hover .popup_menu {
+	display: block;
+}
+.categiries_top .popup_menu .menu_left {
+	list-style:none;
+	margin: 0; 
+	padding: 0;
+}
+.categiries_top .popup_menu .menu_left .icon-set__icon {
+	font-size: 10px;
+	padding-left: 5px;
+}
+.categiries_top .popup_menu .menu_left .icon-set__icon.blue {
+	color: blue;
+}
+.categiries_top .popup_menu .menu_left .icon-set__icon.red {
+	color: red;
+}
+.categiries_top .popup_menu .menu_left .icon-set__icon.yellow {
+	color: #ef8d00;
+}
+.categiries_top .popup_menu .menu_left sup {
+	font-size: 9px;
+}
+.categiries_top .popup_menu .menu_left_box:hover {
+	height: auto;
+	z-index: 99;	
+}
+.categiries_top .popup_menu .menu_left_box:hover .menu_left{
+	height: auto;
+	z-index: 99;
+}
+.categiries_top .popup_menu .menu_left hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.categiries_top .popup_menu .menu_left a {
+	color: #008dde;
+	font-size: 13px;
+	line-height: 25px;
+}
+.categiries_top .popup_menu .menu_left a {
+	color: #008dde;
+	font-size: 13px;
+	line-height: 25px;
+}
+.categiries_top .popup_menu .menu_left li {
+	padding-left: 20px;
+}
+.categiries_top .popup_menu .menu_left li:hover {
+	background: #f6f6f6;
+}
+.categiries_top .popup_menu .menu_left.bl {
+	border-left: 1px solid #e7e7e7;
+	border-radius: 0;
+	width: 540px;
+}
+.categiries_top .popup_menu .counts {
+	font-size: 13px;
+	color: #888888;
+}
+.categiries_top .popup_menu_specials {
+	position: absolute;
+	right: 0;
+	top: 0;
+    width: 350px;
+	height: 100%;
+	background: #f4f4f4;
+	border-radius: 0 5px 5px 0;
+	display: none;
+}
+.categiries_top .popup_menu li.specials:hover .popup_menu_specials {
+	display: block;
+}
+.categiries_top .popup_menu li.specials .popup_menu_specials .glyphicon {
+    color: #888888;
+    font-size: 9px;
+}
+.categiries_top .popup_menu_specials::before {
+	box-shadow: 0 0 6px rgba(1,2,4,.3);	
+	content: '';
+	display: block;
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.categiries_top .popup_menu_specials::after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #f4f4f4;
+}
+.categiries_top .popup_menu_specials .b_i {
+	margin: 20px;
+}
+.categiries_top .popup_menu_specials .box-3 {
+	border-radius:  5px;
+	background: #fff;
+	padding: 30px 30px;
+	position: relative;
+	height: 170px;
+	overflow: hidden;
+	margin-bottom: 20px;
 }
 .menu_box .menu_left {
 	list-style:none;
