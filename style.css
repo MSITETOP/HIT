@@ -160,6 +160,7 @@ span.glyphicon-ruble::before {
 	font-weight: 700;
 	text-decoration: none;
 	margin: 0px;
+	outline: 0;
 }
 .header .main {
 	width: 100%;
@@ -302,6 +303,156 @@ span.glyphicon-ruble::before {
 	font-size: 70%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.popup_modal {
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 15px rgba(1,2,4,.6);
+	width: 350px;
+	margin: 50px auto;
+	color: #444444;
+}
+.popup_modal .head::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.popup_modal .head .title {
+	float: left;
+	font-size: 13px;
+	line-height: 18px;
+	margin: 20px 40px;
+	margin-right: 0;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.popup_modal .head .close {
+	margin-top: 20px;
+	margin-right: 40px;
+	font-size: 25px;
+	line-height: 18px;
+	height: 18px;
+	outline: 0;
+}
+.popup_modal .auth_social_form {
+	padding: 15px 40px;	
+	background: #f4f4f4;
+}
+.popup_modal .auth_social_form .sc_ico {
+	width: 43px;
+	height: 43px;
+	border: 1px solid #dbdbdb;
+	display: inline-block;
+	border-radius: 5px;
+	background: #fff;
+	color: #008dde;
+	cursor: pointer;
+	text-align: center;
+	line-height: 43px;
+	text-decoration: none;
+	font-size: 28px;
+	margin-left: 10px;
+}
+.popup_modal .auth_social_form .socserv {
+	margin-left: -10px;
+	margin-top: 15px;
+}
+.popup_modal .auth_social_form .sc_ico:hover {
+	background: #008dde;
+	color: #fff;
+	border: 1px solid #008dde;
+}
+.popup_modal .auth_social_form .t {
+	color: #5b5b5b;
+	font-size: 11px;
+	line-height: 21px;
+}
+.popup_modal .auth_form {
+	padding: 15px 40px;	
+}
+.popup_modal .auth_form label {
+	font-size: 12px;
+	line-height: 21px;	
+	color: #888;
+	display: block;
+	font-weight: normal;
+}
+.popup_modal .auth_form input {
+	font-size: 13px;
+	line-height: 20px;	
+	color: #000;
+	height: 38px;
+	border-radius: 3px;
+	border: 1px solid #dbdbdb;
+	outline: 0;
+	display: block;
+	width: 100%;
+	padding: 9px 18px;
+}
+.popup_modal .auth_form .forgot_pass {
+	height: 15px;
+	width: 100%;
+	position: relative;
+}
+.popup_modal .auth_form .forgot_pass a {
+	color: #eb0000;
+	font-size: 11px;
+	line-height: 20px;
+	position: absolute;
+	right: 0;
+	bottom: -20px;
+}
+.popup_modal .bottom {
+	padding: 20px 40px;
+	border-top: 1px solid #dbdbdb;	
+}
+.popup_modal .bottom::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.popup_modal .bottom .submit {
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	float: left;
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+	display: block; 
+	float: left;
+	width: 80px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 5px;
+	text-align: center;
+	background: #4eac32;
+	background: -moz-linear-gradient(top,  #4eac32 0%, #44972c 100%);
+	background: -webkit-linear-gradient(top,  #4eac32 0%,#44972c 100%);
+	background: linear-gradient(to bottom,  #4eac32 0%,#44972c 100%);
+}
+.popup_modal .bottom .submit:hover {
+	background: #44972c;
+	background: -moz-linear-gradient(bottom,  #4eac32 0%, #44972c 100%);
+	background: -webkit-linear-gradient(bottom,  #4eac32 0%,#44972c 100%);
+	background: linear-gradient(to top,  #4eac32 0%,#44972c 100%);
+}
+.popup_modal .bottom .reg_box {
+	float: left;
+	margin-left: 25px;
+	font-size: 12px;
+	line-height: 18px;
+}
+.auth_modal {
+	width: 1180px;
+	margin: 0 auto;
+}
+.auth_modal .popup_modal {
+	margin-left: auto;
+	margin-right: 0;
 }
 .footer {
 

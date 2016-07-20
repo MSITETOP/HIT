@@ -30,8 +30,43 @@
 				</ul>
 				<ul class="pers">
 					<li class="auth"><a href="">Регистрация</a></li>      
-					<li class="auth"><a href="">Вход</a></li>      
-				</ul>	
+					<li class="auth"><a href="" data-toggle="modal" aria-hidden="true" data-backdrop="true" data-target="#authModal">Вход</a></li>      
+				</ul>
+				<!-- Auth popup (смещение  auth_modal) -->
+				<div class="modal fade " id="authModal" tabindex="-1">
+					<div class="modal-dialog popup_modal">
+						<div class="head">
+							<div class="title">АВТОРИЗАЦИЯ</div>
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						</div>
+						<form action="">
+						<div class="auth_social_form">
+							<div class="t">Войти с помощью соц. сетей</div>
+							<div class="socserv">
+								<a class="sc_ico"><span class="icon-set__icon icon-font-vimeo"></span></a>
+								<a class="sc_ico"><span class="icon-set__icon icon-font-youtube3"></span></a>
+								<a class="sc_ico"><span class="icon-set__icon icon-font-twitter"></span></a>
+								<a class="sc_ico"><span class="icon-set__icon icon-font-instagram"></span></a>
+								<a class="sc_ico"><span class="icon-set__icon icon-font-vimeo"></span></a>
+							</div>
+						</div>
+						<div class="auth_form">
+							<label>Эл. почта</label>
+							<input type="text" />
+							<div class="forgot_pass"><a href="">Забыли пароль?</a></div>
+							<label>Пароль</label>
+							<input type="password" />
+						</div>
+						<div class="bottom">
+							<input type="submit" class="submit" value="Войти" />
+							<div class="reg_box">
+								Нет акаунта?<br />
+								<a href="">Зарегистрируйтесь</a>
+							</div>
+						</div>
+						</form>
+					</div>
+				</div>				
 			</div>
 		</div>
 		<div class="main">
