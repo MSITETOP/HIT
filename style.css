@@ -1236,12 +1236,14 @@ span.glyphicon-ruble::before {
 	position: relative;
 	height: 340px;
 }
+/*
 .owl-carousel .owl-item .item:hover .props {
 	display: none;
 }
 .owl-carousel .owl-item .item:hover .hover_show {
 	display: none;
 }
+*/
 .main_content .item .props {
 	display: none;
 	font-size: 11px;
@@ -3255,6 +3257,10 @@ span.glyphicon-ruble::before {
 }
 .main_content.slider .owl-carousel .owl-stage-outer {
 	overflow: visible;
+}
+.main_content .owl-carousel .owl-stage-outer {
+	height: 500px;
+    margin-bottom: -130px;
 }
 .main_content.slider .owl-controls .owl-next {
 	position: absolute;
@@ -6118,4 +6124,19 @@ a.h2_button::after {
 	margin: 10px 0 0;
 	font-size: 12px;
 	line-height: 20px;
+}
+.main_content .z-index-1 {
+	z-index: 1;
+}
+.main_content .z-index-2 {
+	z-index: 2;
+}
+.main_content .z-index-3 {
+	z-index: 3;
+}
+.main_content .z-index-4 {
+	z-index: 4;
+}
+.main_content .z-index-5 {
+	z-index: 5;
 }
