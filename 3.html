@@ -386,9 +386,9 @@
 		</div>
 	</div>
 	<div class="main_content">
-		<div class="container">
+		<div class="container main_slider">
 			<h1>Аналогичные товары</h1>
-			<div class="  col-xs-3">
+			<div class="owl-carousel">
 				<div class="item">
 					<a href="" class="img"><img src="images/topvar.jpg" /><div class="label_box"><div class="label_new">NEW</div></div></a>
 					<div class="d">
@@ -413,8 +413,30 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="  col-xs-3">
+				<div class="item">
+					<a href="" class="img"><img src="images/topvar.jpg" /><div class="label_box"><div class="label_new">NEW</div></div></a>
+					<div class="d">
+						<a href="">Ножницы для травы со стационарной ручкой</a>
+						<div class="props">
+							<div class="prop"><span>Производитель:</span> Россия</div>
+							<div class="prop"><span>На складе:</span> Много</div>
+						</div>
+						<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
+						<div class="hover_show">
+							<div class="add_to_cart">
+								<div class="count">
+									<div class="border">
+										<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
+										<div class="input">2</div>
+										<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
+									</div>
+								</div>
+								<button class="add_to_cart_btn">В корзину</button>
+							</div>
+							<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
+						</div>
+					</div>
+				</div>
 				<div class="item">
 					<a href="" class="img"><img src="images/topvar.jpg" /><div class="label_box"><div class="label_sales">-25 %</div></div></a>
 					<div class="d">
@@ -439,8 +461,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="  col-xs-3">
 				<div class="item">
 					<a href="" class="img"><img src="images/topvar.jpg" /><div class="label_box"><div class="label_new">NEW</div><div class="label_sales">-25 %</div></div></a>
 					<div class="d">
@@ -465,8 +485,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="  col-xs-3">
 				<div class="item">
 					<a href="" class="img"><img src="images/topvar.jpg" /></a>
 					<div class="d">

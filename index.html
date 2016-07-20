@@ -493,217 +493,327 @@
 	</div>
 	<div class="tabs_content">
 		<div class="container">
-			<ul class="tabs_menu">
-				<li class="active"><a class="blue" href="">Новинка</a></li>
-				<li><a href="" class="yellow">Хиты продаж</a></li>
-				<li><a href="" class="red">Скидки</a></li>
+			<ul class="tabs_menu nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#panel1" class="blue">Новинка</a></li>
+				<li><a data-toggle="tab" href="#panel2" class="yellow">Хиты продаж</a></li>
+				<li><a data-toggle="tab" href="#panel2" class="red">Скидки</a></li>
 			</ul>
-			<div class="  col-xs-3">
-				<div class="item">
-					<a href="" class="img"><img src="images/topvar.jpg" /><div class="label_box"><div class="label_new">NEW</div></div></a>
-					<div class="d">
-						<a href="">Ножницы для травы со стационарной ручкой</a>
-						<div class="props">
-							<div class="prop"><span>Производитель:</span> Россия</div>
-							<div class="prop"><span>На складе:</span> Много</div>
-						</div>
-						<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
-						<div class="hover_show">
-							<div class="add_to_cart">
-								<div class="count">
-									<div class="border">
-										<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
-										<div class="input">2</div>
-										<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
-									</div>
+			<div class="tab-content">
+				<div id="panel1" class="tab-pane fade in active">
+					<div class="  col-xs-3">
+						<div class="item">
+							<a href="" class="img"><img src="images/topvar.jpg" /><div class="label_box"><div class="label_new">NEW</div></div></a>
+							<div class="d">
+								<a href="">Ножницы для травы со стационарной ручкой</a>
+								<div class="props">
+									<div class="prop"><span>Производитель:</span> Россия</div>
+									<div class="prop"><span>На складе:</span> Много</div>
 								</div>
-								<button class="add_to_cart_btn">В корзину</button>
+								<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
+								<div class="hover_show">
+									<div class="add_to_cart">
+										<div class="count">
+											<div class="border">
+												<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
+												<div class="input">2</div>
+												<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
+											</div>
+										</div>
+										<button class="add_to_cart_btn">В корзину</button>
+									</div>
+									<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
+								</div>
 							</div>
-							<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
+						</div>
+					</div>
+					<div class="  col-xs-3">
+						<div class="item">
+							<a href="" class="img"><img src="images/topvar.jpg" /><div class="label_box"><div class="label_sales">-25 %</div></div></a>
+							<div class="d">
+								<a href="">Ножницы для травы со стационарной ручкой</a>
+								<div class="props">
+									<div class="prop"><span>Производитель:</span> Россия</div>
+									<div class="prop"><span>На складе:</span> Много</div>
+								</div>
+								<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
+								<div class="hover_show">
+									<div class="add_to_cart">
+										<div class="count">
+											<div class="border">
+												<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
+												<div class="input">112</div>
+												<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
+											</div>
+										</div>
+										<button class="add_to_cart_btn">В корзину</button>
+									</div>
+									<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="  col-xs-3">
+						<div class="item">
+							<a href="" class="img"><img src="images/topvar.jpg" /><div class="label_box"><div class="label_new">NEW</div><div class="label_sales">-25 %</div></div></a>
+							<div class="d">
+								<a href="">Ножницы для травы со стационарной ручкой</a>
+								<div class="props">
+									<div class="prop"><span>Производитель:</span> Россия</div>
+									<div class="prop"><span>На складе:</span> Много</div>
+								</div>
+								<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
+								<div class="hover_show">
+									<div class="add_to_cart">
+										<div class="count">
+											<div class="border">
+												<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
+												<div class="input">112</div>
+												<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
+											</div>
+										</div>
+										<button class="add_to_cart_btn">В корзину</button>
+									</div>
+									<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="  col-xs-3">
+						<div class="item">
+							<a href="" class="img"><img src="images/topvar.jpg" /></a>
+							<div class="d">
+								<a href="">Ножницы для травы со стационарной ручкой</a>
+								<div class="props">
+									<div class="prop"><span>Производитель:</span> Россия</div>
+									<div class="prop"><span>На складе:</span> Много</div>
+								</div>
+								<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
+								<div class="hover_show">
+									<div class="add_to_cart">
+										<div class="count">
+											<div class="border">
+												<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
+												<div class="input">112</div>
+												<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
+											</div>
+										</div>
+										<button class="add_to_cart_btn">В корзину</button>
+									</div>
+									<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="  col-xs-3">
+						<div class="item">
+							<a href="" class="img"><img src="images/topvar.jpg" /></a>
+							<div class="d">
+								<a href="">Ножницы для травы со стационарной ручкой</a>
+								<div class="props">
+									<div class="prop"><span>Производитель:</span> Россия</div>
+									<div class="prop"><span>На складе:</span> Много</div>
+								</div>
+								<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
+								<div class="hover_show">
+									<div class="add_to_cart">
+										<div class="count">
+											<div class="border">
+												<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
+												<div class="input">112</div>
+												<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
+											</div>
+										</div>
+										<button class="add_to_cart_btn">В корзину</button>
+									</div>
+									<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="  col-xs-3">
+						<div class="item">
+							<a href="" class="img"><img src="images/topvar.jpg" /></a>
+							<div class="d">
+								<a href="">Ножницы для травы со стационарной ручкой</a>
+								<div class="props">
+									<div class="prop"><span>Производитель:</span> Россия</div>
+									<div class="prop"><span>На складе:</span> Много</div>
+								</div>
+								<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
+								<div class="hover_show">
+									<div class="add_to_cart">
+										<div class="count">
+											<div class="border">
+												<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
+												<div class="input">112</div>
+												<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
+											</div>
+										</div>
+										<button class="add_to_cart_btn">В корзину</button>
+									</div>
+									<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="  col-xs-3 ">
+						<div class="item">
+							<a href="" class="img"><img src="images/topvar.jpg" /></a>
+							<div class="d">
+								<a href="">Ножницы для травы со стационарной ручкой</a>
+								<div class="props">
+									<div class="prop"><span>Производитель:</span> Россия</div>
+									<div class="prop"><span>На складе:</span> Много</div>
+								</div>
+								<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
+								<div class="hover_show">
+									<div class="add_to_cart">
+										<div class="count">
+											<div class="border">
+												<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
+												<div class="input">112</div>
+												<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
+											</div>
+										</div>
+										<button class="add_to_cart_btn">В корзину</button>
+									</div>
+									<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="  col-xs-3 ">
+						<div class="item">
+							<a href="" class="img"><img src="images/topvar.jpg" /></a>
+							<div class="d">
+								<a href="">Ножницы для травы со стационарной ручкой</a>
+								<div class="props">
+									<div class="prop"><span>Производитель:</span> Россия</div>
+									<div class="prop"><span>На складе:</span> Много</div>
+								</div>
+								<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
+								<div class="hover_show">
+									<div class="add_to_cart">
+										<div class="count">
+											<div class="border">
+												<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
+												<div class="input">112</div>
+												<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
+											</div>
+										</div>
+										<button class="add_to_cart_btn">В корзину</button>
+									</div>
+									<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="  col-xs-3">
-				<div class="item">
-					<a href="" class="img"><img src="images/topvar.jpg" /><div class="label_box"><div class="label_sales">-25 %</div></div></a>
-					<div class="d">
-						<a href="">Ножницы для травы со стационарной ручкой</a>
-						<div class="props">
-							<div class="prop"><span>Производитель:</span> Россия</div>
-							<div class="prop"><span>На складе:</span> Много</div>
-						</div>
-						<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
-						<div class="hover_show">
-							<div class="add_to_cart">
-								<div class="count">
-									<div class="border">
-										<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
-										<div class="input">112</div>
-										<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
-									</div>
+				<div id="panel2" class="tab-pane fade">
+					<div class="  col-xs-3">
+						<div class="item">
+							<a href="" class="img"><img src="images/topvar.jpg" /><div class="label_box"><div class="label_new">NEW</div></div></a>
+							<div class="d">
+								<a href="">Ножницы для травы со стационарной ручкой</a>
+								<div class="props">
+									<div class="prop"><span>Производитель:</span> Россия</div>
+									<div class="prop"><span>На складе:</span> Много</div>
 								</div>
-								<button class="add_to_cart_btn">В корзину</button>
+								<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
+								<div class="hover_show">
+									<div class="add_to_cart">
+										<div class="count">
+											<div class="border">
+												<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
+												<div class="input">2</div>
+												<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
+											</div>
+										</div>
+										<button class="add_to_cart_btn">В корзину</button>
+									</div>
+									<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
+								</div>
 							</div>
-							<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="  col-xs-3">
-				<div class="item">
-					<a href="" class="img"><img src="images/topvar.jpg" /><div class="label_box"><div class="label_new">NEW</div><div class="label_sales">-25 %</div></div></a>
-					<div class="d">
-						<a href="">Ножницы для травы со стационарной ручкой</a>
-						<div class="props">
-							<div class="prop"><span>Производитель:</span> Россия</div>
-							<div class="prop"><span>На складе:</span> Много</div>
-						</div>
-						<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
-						<div class="hover_show">
-							<div class="add_to_cart">
-								<div class="count">
-									<div class="border">
-										<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
-										<div class="input">112</div>
-										<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
-									</div>
+					<div class="  col-xs-3">
+						<div class="item">
+							<a href="" class="img"><img src="images/topvar.jpg" /><div class="label_box"><div class="label_new">NEW</div></div></a>
+							<div class="d">
+								<a href="">Ножницы для травы со стационарной ручкой</a>
+								<div class="props">
+									<div class="prop"><span>Производитель:</span> Россия</div>
+									<div class="prop"><span>На складе:</span> Много</div>
 								</div>
-								<button class="add_to_cart_btn">В корзину</button>
+								<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
+								<div class="hover_show">
+									<div class="add_to_cart">
+										<div class="count">
+											<div class="border">
+												<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
+												<div class="input">2</div>
+												<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
+											</div>
+										</div>
+										<button class="add_to_cart_btn">В корзину</button>
+									</div>
+									<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
+								</div>
 							</div>
-							<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="  col-xs-3">
-				<div class="item">
-					<a href="" class="img"><img src="images/topvar.jpg" /></a>
-					<div class="d">
-						<a href="">Ножницы для травы со стационарной ручкой</a>
-						<div class="props">
-							<div class="prop"><span>Производитель:</span> Россия</div>
-							<div class="prop"><span>На складе:</span> Много</div>
-						</div>
-						<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
-						<div class="hover_show">
-							<div class="add_to_cart">
-								<div class="count">
-									<div class="border">
-										<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
-										<div class="input">112</div>
-										<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
-									</div>
+					<div class="  col-xs-3">
+						<div class="item">
+							<a href="" class="img"><img src="images/topvar.jpg" /><div class="label_box"><div class="label_new">NEW</div></div></a>
+							<div class="d">
+								<a href="">Ножницы для травы со стационарной ручкой</a>
+								<div class="props">
+									<div class="prop"><span>Производитель:</span> Россия</div>
+									<div class="prop"><span>На складе:</span> Много</div>
 								</div>
-								<button class="add_to_cart_btn">В корзину</button>
+								<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
+								<div class="hover_show">
+									<div class="add_to_cart">
+										<div class="count">
+											<div class="border">
+												<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
+												<div class="input">2</div>
+												<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
+											</div>
+										</div>
+										<button class="add_to_cart_btn">В корзину</button>
+									</div>
+									<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
+								</div>
 							</div>
-							<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="  col-xs-3">
-				<div class="item">
-					<a href="" class="img"><img src="images/topvar.jpg" /></a>
-					<div class="d">
-						<a href="">Ножницы для травы со стационарной ручкой</a>
-						<div class="props">
-							<div class="prop"><span>Производитель:</span> Россия</div>
-							<div class="prop"><span>На складе:</span> Много</div>
-						</div>
-						<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
-						<div class="hover_show">
-							<div class="add_to_cart">
-								<div class="count">
-									<div class="border">
-										<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
-										<div class="input">112</div>
-										<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
-									</div>
+					<div class="  col-xs-3">
+						<div class="item">
+							<a href="" class="img"><img src="images/topvar.jpg" /><div class="label_box"><div class="label_new">NEW</div></div></a>
+							<div class="d">
+								<a href="">Ножницы для травы со стационарной ручкой</a>
+								<div class="props">
+									<div class="prop"><span>Производитель:</span> Россия</div>
+									<div class="prop"><span>На складе:</span> Много</div>
 								</div>
-								<button class="add_to_cart_btn">В корзину</button>
-							</div>
-							<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="  col-xs-3">
-				<div class="item">
-					<a href="" class="img"><img src="images/topvar.jpg" /></a>
-					<div class="d">
-						<a href="">Ножницы для травы со стационарной ручкой</a>
-						<div class="props">
-							<div class="prop"><span>Производитель:</span> Россия</div>
-							<div class="prop"><span>На складе:</span> Много</div>
-						</div>
-						<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
-						<div class="hover_show">
-							<div class="add_to_cart">
-								<div class="count">
-									<div class="border">
-										<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
-										<div class="input">112</div>
-										<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
+								<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
+								<div class="hover_show">
+									<div class="add_to_cart">
+										<div class="count">
+											<div class="border">
+												<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
+												<div class="input">2</div>
+												<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
+											</div>
+										</div>
+										<button class="add_to_cart_btn">В корзину</button>
 									</div>
+									<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
 								</div>
-								<button class="add_to_cart_btn">В корзину</button>
 							</div>
-							<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="  col-xs-3 ">
-				<div class="item">
-					<a href="" class="img"><img src="images/topvar.jpg" /></a>
-					<div class="d">
-						<a href="">Ножницы для травы со стационарной ручкой</a>
-						<div class="props">
-							<div class="prop"><span>Производитель:</span> Россия</div>
-							<div class="prop"><span>На складе:</span> Много</div>
-						</div>
-						<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
-						<div class="hover_show">
-							<div class="add_to_cart">
-								<div class="count">
-									<div class="border">
-										<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
-										<div class="input">112</div>
-										<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
-									</div>
-								</div>
-								<button class="add_to_cart_btn">В корзину</button>
-							</div>
-							<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="  col-xs-3 ">
-				<div class="item">
-					<a href="" class="img"><img src="images/topvar.jpg" /></a>
-					<div class="d">
-						<a href="">Ножницы для травы со стационарной ручкой</a>
-						<div class="props">
-							<div class="prop"><span>Производитель:</span> Россия</div>
-							<div class="prop"><span>На складе:</span> Много</div>
-						</div>
-						<div class="price"><span class="int">329</span><span class="glyphicon-ruble"></span></div>
-						<div class="hover_show">
-							<div class="add_to_cart">
-								<div class="count">
-									<div class="border">
-										<div class="icon-set__icon icon-font-minus" onclick="if(parseInt($(this).siblings('.input').text())>1)$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())-1);"></div>
-										<div class="input">112</div>
-										<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
-									</div>
-								</div>
-								<button class="add_to_cart_btn">В корзину</button>
-							</div>
-							<a href="" class="add_to_hart"><span class="">Добавить </span>в «Мои желания»</a>
-						</div>
-					</div>
+					</div>					
 				</div>
 			</div>
 		</div>
