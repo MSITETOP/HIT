@@ -76,9 +76,34 @@
 				</div>
 				<div class="col-xs-3">
 					<div class="callback">
-						<a href="" class="city">Екатеринбург</a>
+						<a href="javascript:void(0);" class="city" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Екатеринбург</a>
+						<ul class="dropdown-menu locate_select">
+							<li><a href="#">Екатеринбург</a></li>
+							<li><a href="#">Асбест</a></li>
+						</ul>
 						<div class="phone">8 (343) 21-66-433</div>
-						<a href="">Заказать звонок</a>
+						<a href="" data-toggle="modal" aria-hidden="true" data-backdrop="true" data-target="#feedbackModal">Заказать звонок</a>
+						<!-- feedback popup -->
+						<div class="modal fade " id="feedbackModal" tabindex="-1">
+							<div class="modal-dialog popup_modal">
+								<div class="head head_border">
+									<div class="title">Заказ звонка</div>
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								</div>
+								<form action="">
+								<div class="auth_form">
+									<label>Как вас зовут</label>
+									<input type="text" />
+									<div class="forgot_pass"></div>
+									<label>Контактный телефон</label>
+									<input type="text" class="phone_num" />
+								</div>
+								<div class="bottom">
+									<input type="submit" class="feedback_submit submit" value="ПЕРЕЗВОНИТЕ МНЕ" />
+								</div>
+								</form>
+							</div>
+						</div>	
 					</div>
 				</div>
 				<div class="col-xs-3">
@@ -971,6 +996,7 @@
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="script.js"></script>

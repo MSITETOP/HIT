@@ -2,6 +2,9 @@ body {
 	background-image: url(images/pattern.png);
 	min-width: 1180px!important;	
 }
+a:hover, a:focus {
+	outline: 0;
+}
 .container {
 	padding: 0;
 	width: 1180px!important;
@@ -166,7 +169,14 @@ span.glyphicon-ruble::before {
 	width: 100%;
 	height: 100px;
 	background: #fff;
-	overflow: hidden;
+}
+.header .locate_select {
+	position: absolute;
+	top: 23px;
+	left: 100px;
+}
+.header .locate_select a {
+	width: 100%;
 }
 .header .main a.logo {
 	width: 100%;
@@ -453,6 +463,12 @@ span.glyphicon-ruble::before {
 .auth_modal .popup_modal {
 	margin-left: auto;
 	margin-right: 0;
+}
+.popup_modal .bottom .feedback_submit {
+	width: 100%;
+}
+.popup_modal .head_border {
+	border-bottom: 1px solid #dbdbdb;	
 }
 .footer {
 

@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	$(".phone_num").mask("+7 (999) 99-99-999");
+	
 	$(".owl-carousel").owlCarousel({
 		loop: true,
 		nav: true, 
@@ -9,15 +11,27 @@ $(document).ready(function(){
 			},
 		}
 	});
-	
+
 	/* Карточка товара Галерея */
+	var slidebox = [];
+	var index_gal = 0;
+	$(".fancybox[rel='gallery']").each(function(i,elem) {
+		slidebox[i]={href:$(elem).attr("href")};
+	});
 	$(document).on('click', '.card_product .all_images a', function(e){
 		$('.card_product .all_images a').removeClass("active");
 		$(this).addClass("active");
 		$('.card_product .image_detail').html($('<a/>',{href:$(this).attr("href"),class:'bigImg',html:'<img src="'+$(this).attr("href")+'" />'}));
+		index_gal = $('.card_product .all_images a').index(this);
+		console.log(index_gal);
 		e.preventDefault();
-	});
+	});	
 	$(document).on('click', '.card_product .image_detail a', function(e){
+		$.fancybox(slidebox, {
+			index		: index_gal,
+			padding		: 40,
+			type		: 'image',
+		});
 		e.preventDefault();
 	});
 	
