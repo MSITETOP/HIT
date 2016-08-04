@@ -3375,6 +3375,18 @@ span.glyphicon-ruble::before {
 	text-decoration: none;
     border: 0;
 }
+.card_product .tabs_descriptions .tab-content {
+    position: relative;
+}
+.card_product .tabs_descriptions .tab-content .button-r {
+    text-align: right;
+}
+.card_product .tabs_descriptions .tab-content .button-add-review {
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
 .card_product .tabs_descriptions .tab-content::after {
 	content: '';
 	display: block;
