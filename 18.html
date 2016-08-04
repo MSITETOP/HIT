@@ -109,7 +109,29 @@
 				</div>	
 
 				<h1>Отзывы о нас</h1>
-				<a href="#" class="button-add-review">НАПИСАТЬ отзыв</a>
+				<a href="#" class="button-add-review" data-toggle="modal" aria-hidden="true" data-backdrop="true" data-target="#WriteReview">НАПИСАТЬ отзыв</a>
+				<!-- WriteReview -->
+				<div class="modal fade bs-example-modal-lg" id="WriteReview" tabindex="-1">
+					<div class="modal-dialog popup_modal modal-lg">
+						<div class="head head_border">
+							<div class="title">Написать отзыв</div>
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						</div>
+						<form action="">
+						<div class="auth_form">
+							<label>Как вас зовут</label>
+							<input type="text" />
+						</div>
+						<div  class="auth_form">
+							<label>Ваш отзыв</label>
+							<textarea></textarea>
+						</div> 
+						<div class="bottom">
+							<input type="submit" class="feedback_submit submit" value="ОТПРАВИТЬ" />
+						</div>
+						</form>
+					</div>
+				</div>	
 				<div class="review-block">
 					<div class="review">
 						<div class="author">Валерия Филаретовна <span>2 дня назад</span></div>

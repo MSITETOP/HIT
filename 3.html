@@ -122,7 +122,7 @@
 									<div class="icon-set__icon icon-font-plus" onclick="$(this).siblings('.input').text(parseInt($(this).siblings('.input').text())+1)"></div>
 								</div>
 							</div>
-							<button class="add_to_cart_btn">В корзину</button>
+							<button class="add_to_cart_btn" onclick="skyCart(this)">В корзину</button>
 						</div>
 						<div class="one_click_buy">
 							<span>или</span>
@@ -165,40 +165,148 @@
 					</div>
 				</div>
 				<div class="clear"></div>
-				<div class="tabs_descriptions">
-					<ul class="tabs_menu">
-						<li class="active">Подробнее описание</li>
-						<li>Документы и сертификаты <span>12</span></li>
-						<li>Отзывы о товаре <span>5</span></li>
-						<li>Этот товар в пуликациях <span>7</span></li>
-					</ul>
-					<div class="tab_item">
-						<div class="detail_text">
-							<p>Актинидия Коломикта - Это наиболее теневыносливая и самая зимостойкая, быстрорастущая лиана с тонкими, гладкими, вьющимися или прямостоящими ветвями, взбирающаяся на высоту до 7 м.
-							 </p><p>
-							Декоративность ей придают очень крупные продолговато-яйцевидные листья, с изменяющейся окраской. В начале роста они бронзовые, затем зеленые с переходом к темно-зеленым, перед цветением (преимущественно на открытых местах) концы у большинства листьев становятся ярко-белыми, а после отцветания - розовыми, затем малиново-красными.
-							  </p><p>
-							В пору цветения необычайный аромат раздаётся по всему саду. В осенний период листья окрашиваются в розовые, желтые, светло-желтые или фиолетово-красные тона. Используют в качестве плодового и декоративного растения для вертикального озеленения, высаживая около дома или ограды
-							  </p><p>
-							Декоративность ей придают очень крупные продолговато-яйцевидные листья, с изменяющейся окраской. В начале роста они бронзовые, затем зеленые с переходом к темно-зеленым, перед цветением
-							</p>						
-						</div>
-						<div class="properties">
-							<div class="item_prop">Особенности:&nbsp;&nbsp;   <span>Быстрорастущая лиана</span></div> 
-							<div class="item_prop">Посадка:&nbsp;&nbsp;    <span>март-май, сен-ноя</span></div> 
-							<div class="item_prop">Время цветения:&nbsp;&nbsp;    <span>апр-окт</span></div> 
-							<div class="item_prop">Высота растения:&nbsp;&nbsp;    <span>до 7 м</span></div> 
-							<div class="item_prop">Расположение:&nbsp;&nbsp;    <span>солнце, полутень</span></div> 
-							<div class="item_prop">Расстояние между расстениями:&nbsp;&nbsp;<span>2 м</span></div> 
-							<div class="item_prop">Глубина посадки:&nbsp;&nbsp;    <span>1-2 см</span></div> 
-							<div class="item_prop">Морозостойкость:&nbsp;&nbsp;<span>до -35°С</span></div> 
-							
-							<div class="item_file pdf"><a href="">Скачать инструкцию</a><span>369 kb, PDF</span></div> 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                <div class="tab-content">
+                    <div class="tabs_descriptions">
+                        <ul class="tabs_menu nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#panel1">Подробнее описание</a></li>
+                            <li><a data-toggle="tab" href="#panel2">Документы и сертификаты <span>12</span></a></li>
+                            <li><a data-toggle="tab" href="#panel3">Отзывы о товаре <span>5</span></a></li>
+                            <li><a data-toggle="tab" href="#panel4">Этот товар в пуликациях <span>7</span></a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="panel1" class="tab-pane fade in active">
+                                <div class="tab_item">
+                                    <div class="detail_text">
+                                        <p>Актинидия Коломикта - Это наиболее теневыносливая и самая зимостойкая, быстрорастущая лиана с тонкими, гладкими, вьющимися или прямостоящими ветвями, взбирающаяся на высоту до 7 м.
+                                         </p><p>
+                                        Декоративность ей придают очень крупные продолговато-яйцевидные листья, с изменяющейся окраской. В начале роста они бронзовые, затем зеленые с переходом к темно-зеленым, перед цветением (преимущественно на открытых местах) концы у большинства листьев становятся ярко-белыми, а после отцветания - розовыми, затем малиново-красными.
+                                          </p><p>
+                                        В пору цветения необычайный аромат раздаётся по всему саду. В осенний период листья окрашиваются в розовые, желтые, светло-желтые или фиолетово-красные тона. Используют в качестве плодового и декоративного растения для вертикального озеленения, высаживая около дома или ограды
+                                          </p><p>
+                                        Декоративность ей придают очень крупные продолговато-яйцевидные листья, с изменяющейся окраской. В начале роста они бронзовые, затем зеленые с переходом к темно-зеленым, перед цветением
+                                        </p>						
+                                    </div>
+                                    <div class="properties">
+                                        <div class="item_prop">Особенности:&nbsp;&nbsp;   <span>Быстрорастущая лиана</span></div> 
+                                        <div class="item_prop">Посадка:&nbsp;&nbsp;    <span>март-май, сен-ноя</span></div> 
+                                        <div class="item_prop">Время цветения:&nbsp;&nbsp;    <span>апр-окт</span></div> 
+                                        <div class="item_prop">Высота растения:&nbsp;&nbsp;    <span>до 7 м</span></div> 
+                                        <div class="item_prop">Расположение:&nbsp;&nbsp;    <span>солнце, полутень</span></div> 
+                                        <div class="item_prop">Расстояние между расстениями:&nbsp;&nbsp;<span>2 м</span></div> 
+                                        <div class="item_prop">Глубина посадки:&nbsp;&nbsp;    <span>1-2 см</span></div> 
+                                        <div class="item_prop">Морозостойкость:&nbsp;&nbsp;<span>до -35°С</span></div> 
+                                        
+                                        <div class="item_file pdf"><a href="">Скачать инструкцию</a><span>369 kb, PDF</span></div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel2" class="tab-pane fade">
+                                <div class="tab_item">
+                                    <div class="document_box">
+                                        <div class="item_prop">Сертификат соответствия:&nbsp;&nbsp;   <span><a href="">11.pdf</a></span></div>	
+                                        <div class="item_prop">Инструкция:&nbsp;&nbsp;   <span><a href="">11.pdf</a></span></div>	
+                                        <div class="item_prop">Гарантия:&nbsp;&nbsp;   <span><a href="">11.pdf</a></span></div>	
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel3" class="tab-pane fade">
+                                <div class="tab_item">
+                                    <div class="review-block">
+                                        <div class="review">
+                                            <div class="author">Валерия Филаретовна <span>2 дня назад</span></div>
+                                            <div class="text">Слива в этом году просто замечательная! Дерево мелкой и дерево сливы покрупней стоят усыпанные, как облепиха! Сладкая слива, просто медовая!</div>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="author">Ответ компании:</div>
+                                            <div class="text">Ну и славненько. Продолжайте в том же духе!</div>
+                                        </div>
+                                    </div>
+                                    <div class="review-block">
+                                        <div class="review">
+                                            <div class="author">Валерия Филаретовна <span>2 дня назад</span></div>
+                                            <div class="text">Слива в этом году просто замечательная! Дерево мелкой и дерево сливы покрупней стоят усыпанные, как облепиха! Сладкая слива, просто медовая!</div>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="author">Ответ компании:</div>
+                                            <div class="text">Ну и славненько. Продолжайте в том же духе!</div>
+                                        </div>
+                                    </div>
+                                    <div class="review-block">
+                                        <div class="review">
+                                            <div class="author">Валерия Филаретовна <span>2 дня назад</span></div>
+                                            <div class="text">Слива в этом году просто замечательная! Дерево мелкой и дерево сливы покрупней стоят усыпанные, как облепиха! Сладкая слива, просто медовая!</div>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="author">Ответ компании:</div>
+                                            <div class="text">Ну и славненько. Продолжайте в том же духе!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel4" class="tab-pane fade">
+                                <div class="tab_item">
+                                    <div class="blog-list">
+                                        <div class="item clearfix">
+                                            <div class="image"><a href="#"><img src="images/item.jpg" alt="" /></a></div>
+                                            <div class="all">
+                                                <div class="name">Valera <span>вчера в 13:19</span></div>
+                                                <div class="title"><a href="#">Зимнее укоренение черенков винограда</a></div>
+                                                <div class="text">Сегодня Сретение Господне, 15 февраля. Зима с весной встречается и самое время приступить к укоренению заготовленных черенков винограда. В последние годы селекционеры вывели великое множество сортов этой удивительной культуры.</div>
+                                                <div class="types">
+                                                    <span class="view">12 345</span>
+                                                    <span class="likes">345</span>
+                                                    <span class="comments">25</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-list">
+                                        <div class="item clearfix">
+                                            <div class="image"><a href="#"><img src="images/item.jpg" alt="" /></a></div>
+                                            <div class="all">
+                                                <div class="name">Valera <span>вчера в 13:19</span></div>
+                                                <div class="title"><a href="#">Зимнее укоренение черенков винограда</a></div>
+                                                <div class="text">Сегодня Сретение Господне, 15 февраля. Зима с весной встречается и самое время приступить к укоренению заготовленных черенков винограда. В последние годы селекционеры вывели великое множество сортов этой удивительной культуры.</div>
+                                                <div class="types">
+                                                    <span class="view">12 345</span>
+                                                    <span class="likes">345</span>
+                                                    <span class="comments">25</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-list">
+                                        <div class="item clearfix">
+                                            <div class="image"><a href="#"><img src="images/item.jpg" alt="" /></a></div>
+                                            <div class="all">
+                                                <div class="name">Valera <span>вчера в 13:19</span></div>
+                                                <div class="title"><a href="#">Зимнее укоренение черенков винограда</a></div>
+                                                <div class="text">Сегодня Сретение Господне, 15 февраля. Зима с весной встречается и самое время приступить к укоренению заготовленных черенков винограда. В последние годы селекционеры вывели великое множество сортов этой удивительной культуры.</div>
+                                                <div class="types">
+                                                    <span class="view">12 345</span>
+                                                    <span class="likes">345</span>
+                                                    <span class="comments">25</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fix_cart_body">
+                <div class="basket">
+                    <a href="">Корзина</a>
+                    <div class="d"><span>156</span><span class="small"> товара на </span><span>36 885 <span class="glyphicon-ruble"></span></span></div>
+                    <div class="dop">
+                        <div class="info">До минимального<br />заказа осталось</div>
+                        <div class="ostatok">115 <span class="glyphicon-ruble"></span></div>
+                    </div>
+                </div>     
+            </div>
+        </div>
 	</div>
 	<div class="main_content add_tovar_basket">
 		<div class="container">

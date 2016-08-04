@@ -11,7 +11,18 @@ $(document).ready(function(){
 			},
 		}
 	});
-
+    
+    // загрузка файла
+    $(".popup_modal .file_input input").change(function() {
+        if ($(this).val().lastIndexOf('\\')) {
+            var i = $(this).val().lastIndexOf('\\') + 1;
+        } else {
+            var i = $(this).val().lastIndexOf('/') + 1;
+        }
+        fileName = $(this).val().slice(i);
+        $(this).siblings("span").text(fileName);
+    });
+    
 	/* Карточка товара Галерея */
 	var slidebox = [];
 	var index_gal = 0;
@@ -94,4 +105,19 @@ function clearRange(obj) {
 	$obj = $(obj);
 	$obj.slider( "values", [$obj.data('min'), $obj.data('max')]);
 	$obj.closest('.popup').siblings('a').removeClass("active");
+}
+function skyCart(obj) {
+    var thisposition = $(obj).offset();
+	var cartposition = $(".header .basket a").offset();
+    var cart = $(obj).clone().appendTo("body").addClass("add_to_cart_btn_sky").css({
+        'margin': '0',
+        'position': 'absolute', 
+        'top':thisposition.top, 
+        'left':thisposition.left
+    }).animate({
+        left: cartposition.left,
+        top: cartposition.top,
+        opacity: 0
+    }, 500, "linear", function(){cart.remove()});
+    console.log(thisposition, cartposition);
 }

@@ -399,6 +399,48 @@ span.glyphicon-ruble::before {
 	width: 100%;
 	padding: 9px 18px;
 }
+.popup_modal .auth_form textarea {
+	font-size: 13px;
+	line-height: 20px;	
+	color: #000;
+	border-radius: 3px;
+	border: 1px solid #dbdbdb;
+	outline: 0;
+	display: block;
+	width: 100%;
+	padding: 9px 18px;
+}
+.popup_modal .file_input {
+    position: relative;
+    margin: 15px 40px;
+    margin-top: 0;
+}
+.popup_modal .file_input span {
+	font-size: 12px;
+	line-height: 21px;	
+	color: #888;
+	display: block;
+	font-weight: normal;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    top: 0;
+    left: 0;
+    
+}
+.popup_modal .file_input input {
+    font-size: 1px;
+    color: #fff;
+    background: #fff;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    opacity: 0;
+    z-index: 2;
+}
 .popup_modal .auth_form .forgot_pass {
 	height: 15px;
 	width: 100%;
@@ -1429,13 +1471,13 @@ span.glyphicon-ruble::before {
 	display: block;
 	position: relative;
 }
-.main_content .item .img .label_box {
+.item .img .label_box {
 	top: 20px;
 	left: 20px;
 	position: absolute;
 	height: 25px;
 }
-.main_content .item .img .label_sales {
+.item .img .label_sales {
 	height: 25px;
 	line-height: 25px;
 	width: 56px;
@@ -1449,7 +1491,7 @@ span.glyphicon-ruble::before {
 	display: inline-block;
 	margin-right: 5px;
 }
-.main_content .item .img .label_new {
+.item .img .label_new {
 	height: 25px;
 	line-height: 25px;
 	width: 56px;
@@ -1463,7 +1505,7 @@ span.glyphicon-ruble::before {
 	display: inline-block;
 	margin-right: 5px;
 }
-.main_content .item .img .label_hit {
+.item .img .label_hit {
 	height: 25px;
 	line-height: 25px;
 	width: 56px;
@@ -3118,13 +3160,13 @@ span.glyphicon-ruble::before {
 .card_product .card_product_info .add_to_hart_count {
 	font-size: 12px;
 	color: #444444;
-	padding: 0 20px;
+	padding: 0 15px;
 	float: left;
 }
 .card_product .card_product_info .head_props {
 	font-size: 12px;
 	color: #888;
-	padding: 0 20px;
+	padding: 0 15px;
 	float: left;
 }
 .card_product .card_product_info .head_props span {
@@ -3327,6 +3369,16 @@ span.glyphicon-ruble::before {
 	list-style:none;
 	margin: 0; 
 	padding: 45px 0;
+    border: 0;
+}
+.card_product .tabs_descriptions .tabs_menu li a {
+	text-decoration: none;
+    border: 0;
+}
+.card_product .tabs_descriptions .tab-content::after {
+	content: '';
+	display: block;
+	clear: both;
 }
 .card_product .tabs_descriptions .tabs_menu li {
 	display: block;
@@ -3352,6 +3404,27 @@ span.glyphicon-ruble::before {
 	border-radius: 3px;
 	background: #666666;
 	color: #fff;
+}
+.card_product .document_box {
+    overflow: hidden;
+}
+.card_product .document_box .item_prop {
+	position: relative;
+	height: 25px;
+	color: #888;
+}
+.card_product .document_box .item_prop::after {
+	content: '.............................................................................................................................................................................................................................................................';
+	position: absolute;
+}
+.card_product .document_box .item_prop span {
+	background: #fff;
+	width: 220px;
+	padding: 0 10px;
+	color: #444444;
+	position: absolute;
+	right: 0;
+	z-index: 99;
 }
 .card_product .tabs_descriptions .detail_text {
 	color: #444444;
@@ -3497,6 +3570,9 @@ span.glyphicon-ruble::before {
 	box-shadow: 0 0 3px rgba(0,0,0,.2);
 	padding: 25px 18px;
 	position: relative;
+}
+.main_content.add_tovar_basket .itogo:hover {
+    z-index: 99;
 }
 .main_content.add_tovar_basket .itogo .add_to_cart_btn {
 	display: block;
@@ -5269,7 +5345,7 @@ a.h2_button::after {
 	position: relative;
 	padding-left: 30px;
 }
-.types span:before {
+.types>span:before {
 	content: '';
 	display: block;
 	position: absolute;
@@ -5971,6 +6047,7 @@ a.h2_button::after {
 	position: absolute;
 	top: 47px;
 	right: 0;
+    z-index: 99;
 }
 .button-add-review:before {
 	content: '';
@@ -6306,4 +6383,92 @@ a.h2_button::after {
 }
 .main_content .z-index-5 {
 	z-index: 5;
+}
+.add_to_cart_btn_sky {
+    display: block;
+    background: #008dde;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 11px;
+    border: 0;
+    height: 36px;
+    line-height: 36px;
+    width: 124px;
+    text-align: center;
+    float: right;
+    outline: 0;
+    margin-left: 10px;
+}
+.fix_cart_body {
+    position: fixed;
+    bottom: 0;
+    width: 1180px;
+    z-index: 100;
+}
+.fix_cart_body .basket {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    background: -moz-linear-gradient(top, #4eac32 0%, #44972c 100%);
+    background: -webkit-linear-gradient(top, #4eac32 0%,#44972c 100%);
+    background: linear-gradient(to bottom, #4eac32 0%,#44972c 100%);
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 3px #4eac32;
+    z-index: 101;
+	padding-left: 25px;
+    padding: 10px 20px;
+}
+.fix_cart_body .basket a {
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	border-bottom: 1px dashed #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+
+}
+.fix_cart_body .basket .d {
+	font-size: 11px;
+	color: #fff;
+}
+.fix_cart_body .basket .d span {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 700;
+}
+.fix_cart_body .basket .d span.small {
+	font-size: 11px;
+	color: #fff;
+	font-weight: 300;
+}
+.fix_cart_body .basket .d span.glyphicon-ruble::before {
+	color: #fff;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+	font-size: 70%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fix_cart_body .basket .dop {
+	font-size: 11px;
+}
+.fix_cart_body .basket .dop .info {
+	float: left;
+	font-style: Italic;
+	color: #fff;
+	line-height: 12px;
+}
+.fix_cart_body .basket .dop .ostatok {
+	float: left;
+	line-height: 24px;
+	height: 24px;
+	padding-left: 10px;
+	font-weight: 700;
+}
+.fix_cart_body .basket .dop .ostatok span.glyphicon-ruble::before {
+    color: #fff;
 }
