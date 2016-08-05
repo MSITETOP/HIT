@@ -1204,13 +1204,17 @@ span.glyphicon-ruble::before {
 	padding-bottom: 20px;
 }
 .sales_box .box-1 {
-	border: 2px solid #ff9000;
+    cursor: pointer;
+	border: 2px solid #fff;
 	border-radius:  5px;
 	background: #fff;
 	padding: 30px 30px;
 	position: relative;
 	height: 182px;
 	overflow: hidden;
+}
+.sales_box .box-1:hover {
+	border: 2px solid #ff9000;
 }
 .sales_box .box-1 .icon-set__icon {
 	font-size: 36px;
@@ -1220,6 +1224,8 @@ span.glyphicon-ruble::before {
 	right: 30px;
 }
 .sales_box .box-2 {
+    cursor: pointer;
+	border: 2px solid #fff;
 	border-radius:  5px;
 	background: #fff;
 	padding: 30px 30px;
@@ -1230,6 +1236,9 @@ span.glyphicon-ruble::before {
 	background-repeat: no-repeat;
 	background-position: 100% 100%;
 	background-size: contain;
+}
+.sales_box .box-2:hover {
+	border: 2px solid #4eac32;    
 }
 .sales_box .box-2 .t {
 	background: #4eac32;
@@ -1277,12 +1286,17 @@ span.glyphicon-ruble::before {
     -moz-osx-font-smoothing: grayscale;
 }
 .sales_box .box-3 {
+    cursor: pointer;
+	border: 2px solid #fff;
 	border-radius:  5px;
 	background: #fff;
 	padding: 30px 30px;
 	position: relative;
 	height: 182px;
 	overflow: hidden;
+}
+.sales_box .box-3:hover {
+	border: 2px solid #145fdb;
 }
 .sales_box .box-3 .icon-set__icon {
 	font-size: 36px;
@@ -6483,4 +6497,28 @@ a.h2_button::after {
 }
 .fix_cart_body .basket .dop .ostatok span.glyphicon-ruble::before {
     color: #fff;
+}
+.social_ico_sprite {
+    background: url(images/socserv_sprite_sm.png) no-repeat;
+    width: 22px;
+    height: 22px;
+    overflow: hidden;
+    display: block;
+    margin: 3px;
+    background-position: 3px 0px;
+}
+.sc_ico:hover .social_ico_sprite {
+    background-position: 3px -22px;
+}
+.vk_ico {
+    background-position: 3px 0px;
+}
+.sc_ico:hover .social_ico_sprite {
+    background-position: 3px -22px;
+}
+.fb_ico {
+    background-position: -45px 0px;
+}
+.fb_ico:hover .social_ico_sprite {
+    background-position: -45px -22px;
 }
