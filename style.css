@@ -372,6 +372,9 @@ span.glyphicon-ruble::before {
 	color: #fff;
 	border: 1px solid #008dde;
 }
+.popup_modal .auth_social_form .sc_ico .social_ico_sprite {
+    margin: 9px;
+}
 .popup_modal .auth_social_form .t {
 	color: #5b5b5b;
 	font-size: 11px;
@@ -1212,9 +1215,12 @@ span.glyphicon-ruble::before {
 	position: relative;
 	height: 182px;
 	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: initial;
 }
 .sales_box .box-1:hover {
-	border: 2px solid #ff9000;
+	border-color: inherit;
 }
 .sales_box .box-1 .icon-set__icon {
 	font-size: 36px;
@@ -1235,10 +1241,10 @@ span.glyphicon-ruble::before {
 	background-image: url(images/box-2-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: 100% 100%;
-	background-size: contain;
+	background-size: initial;
 }
 .sales_box .box-2:hover {
-	border: 2px solid #4eac32;    
+	border-color: inherit; 
 }
 .sales_box .box-2 .t {
 	background: #4eac32;
@@ -1294,9 +1300,12 @@ span.glyphicon-ruble::before {
 	position: relative;
 	height: 182px;
 	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: initial;
 }
 .sales_box .box-3:hover {
-	border: 2px solid #145fdb;
+	border-color: inherit;
 }
 .sales_box .box-3 .icon-set__icon {
 	font-size: 36px;
@@ -3349,7 +3358,7 @@ span.glyphicon-ruble::before {
 .card_product .card_product_info .socserv_icons_box {
 	padding: 18px 0;
 }
-.card_product .card_product_info .socserv_icons_box .sc_ico {
+.card_product .card_product_info .socserv_icons_box .sc_ico_tov {
 	display: inline-block;
 	padding: 0 10px;
 	border-radius: 5px;
@@ -3362,6 +3371,12 @@ span.glyphicon-ruble::before {
 	font-size: 13px;
 	font-weight: 700;
 	cursor: pointer;
+}
+.card_product .card_product_info .socserv_icons_box .sc_ico_tov .social_ico_sprite {
+    display: block;
+    float: left;
+    margin: 0;
+    margin-top:4px;
 }
 .card_product .card_product_info .socserv_icons_box .sc_ico:hover, .card_product .card_product_info .socserv_icons_box .sc_ico .icon-set__icon {
 	color: #008dde;
@@ -6505,20 +6520,45 @@ a.h2_button::after {
     overflow: hidden;
     display: block;
     margin: 3px;
-    background-position: 3px 0px;
+    background-position: 50% 50%;
 }
-.sc_ico:hover .social_ico_sprite {
-    background-position: 3px -22px;
+.sc_ico:hover .vk_ico {
+    background: url(images/vk.png) no-repeat;
 }
 .vk_ico {
-    background-position: 3px 0px;
+    background: url(images/vk_1.png) no-repeat;
 }
-.sc_ico:hover .social_ico_sprite {
-    background-position: 3px -22px;
+.sc_ico:hover .sc_ico {
+    background: url(images/vk.png) no-repeat;
 }
 .fb_ico {
-    background-position: -45px 0px;
+    background: url(images/fb_1.png) no-repeat;
 }
-.fb_ico:hover .social_ico_sprite {
-    background-position: -45px -22px;
+.sc_ico:hover .fb_ico {
+    background: url(images/fb.png) no-repeat;
 }
+.tw_ico  {
+    background: url(images/tw_1.png) no-repeat;
+}
+.sc_ico:hover .tw_ico {
+    background: url(images/tw.png) no-repeat;
+}
+.is_ico {
+    background: url(images/in_1.png) no-repeat;
+}
+.sc_ico:hover .is_ico {
+    background: url(images/in.png) no-repeat;
+}
+.ok_ico {
+    background: url(images/ок_1.png) no-repeat;
+}
+.sc_ico:hover .ok_ico {
+    background: url(images/ок.png) no-repeat;
+}
+.gp_ico {
+    background: url(images/g+_1.png) no-repeat;
+}
+.sc_ico:hover .gp_ico {
+    background: url(images/g+.png) no-repeat;
+}
+
