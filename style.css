@@ -430,6 +430,7 @@ span.glyphicon-ruble::before {
     line-height: 30px;
     top: 0;
     left: 0;
+    cursor: pointer;
     
 }
 .popup_modal .file_input input {
@@ -443,6 +444,7 @@ span.glyphicon-ruble::before {
     height: 30px;
     opacity: 0;
     z-index: 2;
+    cursor: pointer;
 }
 .popup_modal .auth_form .forgot_pass {
 	height: 15px;
@@ -4827,6 +4829,15 @@ a.h2_button::after {
 	box-shadow: 0 0 2px rgba(0,0,0,.25);
 	text-decoration: none;
 }
+.personal_page_content .order_container {
+    margin-bottom: 20px;
+}
+.personal_page_content .order_container .tab_item .line2 {
+    margin-bottom: 0;
+}
+.personal_page_content .order_container .tabs_menu li a:hover, .personal_page_content .order_container .tabs_menu li.active a {
+    box-shadow: none;
+}
 .personal_page_content .sale-card {
 	background: #ffcc00;
 	background: -moz-linear-gradient(bottom,  #cc9900 0%, #ffcc00  100%);
@@ -5217,14 +5228,14 @@ a.h2_button::after {
 .personal_page_content .order_id_personal_list .tr .tda {
 	line-height: 21px;
 	display: block;
-	width: 450px;
+	width: 410px;
 	float: left;
     height: 110px;
     padding: 10px 0px;
 	line-height: 90px;
 }
 .personal_page_content .order_id_personal_list .tr .summary {
-	width: 265px;
+	width: 305px;
 	float: left;
     height: 110px;
     padding: 10px 28px;
@@ -5240,7 +5251,7 @@ a.h2_button::after {
 }
 .personal_page_content .order_id_personal_list .tr .price::before {
 	content: '×';
-	padding: 0 15px;
+	padding: 0 5px;
 	font-size: 16px;
 	color: #e5e5e5;
 }
@@ -5253,7 +5264,7 @@ a.h2_button::after {
 }
 .personal_page_content .order_id_personal_list .tr .sprice::before {
 	content: '=';
-	padding: 0 15px;
+	padding: 0 5px;
 	font-size: 16px;
 	color: #e5e5e5;
 }
@@ -6513,6 +6524,137 @@ a.h2_button::after {
 .fix_cart_body .basket .dop .ostatok span.glyphicon-ruble::before {
     color: #fff;
 }
+.sales_left_box {
+	padding-bottom: 20px;
+}
+.sales_left_box .box-1 {
+    margin-bottom: 20px;
+    cursor: pointer;
+	border: 2px solid #fff;
+	border-radius:  5px;
+	background: #fff;
+	padding: 30px 30px;
+	position: relative;
+	height: 182px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: initial;
+    border-color: inherit;
+}
+.sales_left_box .box-1 .icon-set__icon {
+	font-size: 36px;
+	color: #ff9000;
+	position: absolute;
+	bottom: 33px;
+	right: 30px;
+}
+.sales_left_box .box-3 {
+    cursor: pointer;
+	border: 2px solid #fff;
+	border-radius:  5px;
+	background: #fff;
+	padding: 30px 30px;
+	position: relative;
+	height: 182px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: initial;
+    border-color: inherit;
+    margin-bottom: 20px;
+}
+.sales_left_box .box-3 .icon-set__icon {
+	font-size: 36px;
+	color: #145fdb;
+	position: absolute;
+	bottom: 30px;
+	right: 50px;
+}
+.sales_left_box .t {
+	color: #000;
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 28px;
+	padding-bottom: 20px;
+}
+.sales_left_box .d {
+	color: #000;
+	font-size: 14px;
+	line-height: 21px;
+}
+.sales_item_box {
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 5px;
+    height: 180px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.sales_item_box::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.sales_item_box .greenbox {
+    height: 180px;
+    width: 320px;
+    background: rgba(78,172,50,.9);
+    float: left;
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+}
+.sales_item_box .greenbox .line-1 {
+    padding: 30px;
+    font-size: 21px;
+    line-height: 28px;
+    padding-bottom: 0;
+}
+.sales_item_box .greenbox .line-2 {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 15px 30px;
+}
+.sales_item_box .redbox {
+    color: #fff;
+    font-size: 13px;
+    line-height: 21px;
+    float: right;
+    position: relative;
+    margin-right: 15px;
+    overflow: hidden;
+}
+.sales_item_box .redbox .i {
+    background: #ff0000;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 99;
+}
+.sales_item_box .redbox>.ra {
+    display: block;
+    -webkit-transform: rotate(5deg) skewX(5deg);
+    -ms-transform: rotate(5deg) skewX(5deg);
+    transform: rotate(5deg) skewX(5deg);
+    background: #ff0000;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 35px;
+    right: -48%;    
+}
+.sales_item_box .redbox>.la {
+    display: block;
+    -webkit-transform: rotate(-5deg) skewX(-5deg);
+    -ms-transform: rotate(-5deg) skewX(-5deg);
+    transform: rotate(-5deg) skewX(-5deg);
+    background: #ff0000;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 35px;
+    left: -48%;    
+}
 .social_ico_sprite {
     background: url(images/socserv_sprite_sm.png) no-repeat;
     width: 22px;
@@ -6561,4 +6703,3 @@ a.h2_button::after {
 .sc_ico:hover .gp_ico {
     background: url(images/g+.png) no-repeat;
 }
-

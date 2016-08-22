@@ -20,7 +20,10 @@ $(document).ready(function(){
             var i = $(this).val().lastIndexOf('/') + 1;
         }
         fileName = $(this).val().slice(i);
-        $(this).siblings("span").text(fileName);
+        if(!fileName.length) 
+            $(this).siblings("span").text($(this).siblings("span").data("text"));
+        else
+            $(this).siblings("span").text(fileName);
     });
     
 	/* Карточка товара Галерея */
